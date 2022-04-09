@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    xmlns:tools=".MainActivity"
+    xmlns:tools2="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:orientation="vertical"
+    tools2:ignore="NamespaceTypo"
+    android:background="#7396ef ">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#7396ef ">
+
+        <Button
+            android:id="@+id/RwButton"
+            android:layout_width="125dp"
+            android:layout_height="52dp"
+            android:layout_gravity="center_horizontal"
+            android:backgroundTint="#0236F1"
+            android:text="Current Roadworks" />
+
+        <Button
+            android:id="@+id/CurrentInButton"
+            android:layout_width="wrap_content"
+            android:layout_height="52dp"
+            android:layout_gravity="center_horizontal"
+            android:backgroundTint="#FF0236F1"
+            android:text="Current Incidents" />
+
+        <Button
+            android:id="@+id/PlanRwButton"
+            android:layout_width="wrap_content"
+            android:layout_height="52dp"
+            android:layout_gravity="center_horizontal"
+            android:backgroundTint="#FF0236F1"
+            android:text="Planned Roadworks" />
+
+
+    </LinearLayout>
+
+
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="409dp"
+        map:cameraZoom="7"
+        tools:context=".MainActivity" />
+
+    <ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:background="#7396ef "
+        >
+
+        <TextView
+            android:id="@+id/ItemView"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text=""
+            android:textSize="20sp"
+            android:background="#7336ef "/>
+
+
+    </ScrollView>
+
+</LinearLayout>
+
+    <!-- Jak Sum William Tong -->
+    <!-- S1823550 -->
